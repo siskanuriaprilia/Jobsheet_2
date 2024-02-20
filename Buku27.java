@@ -1,4 +1,3 @@
-
 public class Buku27 {
         
         String judul, pengarang;
