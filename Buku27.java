@@ -4,7 +4,7 @@ public class Buku27 {
     int halaman, stok, harga;
     int gantiHarga;
 
-    void tampilInformasi()
+    void tampilanInformasi()
     {
         System.out.println("Judul: " + judul);
         System.out.println("Pengarang: "  + pengarang);
@@ -15,15 +15,8 @@ public class Buku27 {
 
     void  terjual (int jml)
     {
-        if (stok > 0){
-            stok -= jml;
-            if (stok < 0);
-            stok = 0;
-        }
-        else 
-        {
-            System.out.println("Stok habis, tidak ada buku yang dapat dijual");
-        }
+        
+        stok -= jml;
     }
         void restock(int jml)
     {
@@ -34,3 +27,4 @@ public class Buku27 {
         harga = hrg;
     }
 }
+
