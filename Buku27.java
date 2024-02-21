@@ -7,7 +7,7 @@ public class Buku27 {
         System.out.println("Pengarang: "  + pengarang);
         System.out.println("Jumlah halaman : "  + halaman);
         System.out.println("Sisa stok: " + stok);
-        System.out.println("Harga: " + harga);
+        System.out.println("Harga: Rp " + harga);
     }
 
     void terjual(int jml)
