@@ -30,7 +30,7 @@ public class Buku27 {
     {
         harga = hrg;
     }
-    int hitung hitungHargaTotal(int jumlahTerjual)
+    int hitungHargaTotal(int jumlahTerjual)
     {
         return harga * jumlahTerjual;
     }
@@ -40,7 +40,7 @@ public class Buku27 {
 
         if (hargaTotal > 150000)
         {
-            diskon = (int)(hargaTotal * 0.12) // Diskonya adalah 12%
+            diskon = (int)(hargaTotal * 0.12); // Diskonya adalah 12%
         }
         else if (hargaTotal >= 75000 && hargaTotal <= 150000)
         {
@@ -48,8 +48,10 @@ public class Buku27 {
         }
         // jika harga total adalah kurang dari 75000, diskon tetap 0%
         return diskon;
+        
     }
-    int hitungHargaBayar(int hargaTotal, int diskon);
+    
+    double hitungHargaBayar(double hargaTotal, double diskon)
     {
         return hargaTotal - (hargaTotal * diskon);
     }

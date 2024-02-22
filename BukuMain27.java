@@ -20,6 +20,11 @@ public class BukuMain27 {
         bk2.tampilanInformasi();
 
         Buku27 bksiskanuriaprilia = new Buku27 ("Esok Lebih Baik", "Abdullah Al-Maghults", 127, 20, 70000);
+        bksiskanuriaprilia.terjual(7);
         bksiskanuriaprilia.tampilanInformasi();
+ 
+        System.out.println("total harga: Rp"+bksiskanuriaprilia.hitungHargaTotal(7));
+        System.out.println("Total diskon: Rp"+bksiskanuriaprilia.hitungDiskon(490000));
+        System.out.println("Total harga yang harus dibayar: Rp"+bksiskanuriaprilia.hitungHargaBayar(490000, 0.12));
     }   
 }
