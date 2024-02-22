@@ -26,19 +26,42 @@ public class Buku27 {
     {
         stok += jml;
     }
-
     void gantiHarga(int hrg)
     {
         harga = hrg;
     }
-    public  Buku27(){
-
+    int hitung hitungHargaTotal(int jumlahTerjual)
+    {
+        return harga * jumlahTerjual;
     }
-    public Buku27 (String jud, String pg, int hal, int stok, int har){
+    int hitungDiskon (int hargaTotal)
+    {
+        int diskon = 0;
+
+        if (hargaTotal > 150000)
+        {
+            diskon = (int)(hargaTotal * 0.12) // Diskonya adalah 12%
+        }
+        else if (hargaTotal >= 75000 && hargaTotal <= 150000)
+        {
+            diskon = (int)(hargaTotal * 0.05); // Diskonya 5%
+        }
+        // jika harga total adalah kurang dari 75000, diskon tetap 0%
+        return diskon;
+    }
+    int hitungHargaBayar(int hargaTotal, int diskon);
+    {
+        return hargaTotal - (hargaTotal * diskon);
+    }
+
+    public  Buku27(){
+    }
+    public Buku27 (String jud, String pg, int hal, int stok, int har)
+    {
         judul = jud;
         pengarang = pg;
         halaman = hal;
         this.stok = stok;
         harga = har;
     }
-}   
+}
